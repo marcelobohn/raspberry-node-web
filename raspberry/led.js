@@ -1,7 +1,7 @@
 var wpi = require('wiring-pi');
 
 module.exports = {
-	changeLed = function(status) {
+	changeLed : function(status) {
 		var configPin = 7;
 
 		wpi.setup('wpi');
@@ -9,5 +9,5 @@ module.exports = {
 
 		var isLedOn = status;
 		wpi.digitalWrite(configPin, isLedOn );
-	};
+	}
 };
